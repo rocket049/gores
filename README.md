@@ -5,7 +5,12 @@
 
 #### 使用说明
 
-`gores usage: gores -name varName -f inputfile -pkg packageName`
+`gores -name varName -f inputfile -pkg packageName`
 
 效果： 把 'inputfile' 的内容变成变量 'varName' 的值，类型： []byte
+
 生成： varNameRes.go
+
+#### 安装
+
+`go get https://gitee.com/rocket049/gores`
