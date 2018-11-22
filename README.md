@@ -13,4 +13,4 @@
 
 #### 安装
 
-`go get https://gitee.com/rocket049/gores`
+`go get gitee.com/rocket049/gores`
