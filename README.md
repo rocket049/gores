@@ -7,6 +7,17 @@
 
 `gores -name varName -f inputfile -pkg packageName`
 
+```
+gores -h
+Usage of gores:
+  -f string
+    	输入文件(input file pathname)
+  -name string
+    	变量名称（variable name）
+  -pkg string
+    	package 名称(package name)，默认值：main (default "main")
+```
+
 效果： 把 'inputfile' 的内容变成变量 'varName' 的值，类型： []byte
 
 生成： varNameRes.go
