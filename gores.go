@@ -20,12 +20,13 @@ func main() {
 	var fname = flag.String("f", "", "输入文件(input file pathname)")
 	flag.Parse()
 	tpl1 := `package %s
+//%s : %s
 var %s = {{.}}
 `
 	if len(*name) == 0 || len(*fname) == 0 {
 		panic(errors.New("name 或 f 参数未空"))
 	}
-	tpl := fmt.Sprintf(tpl1, *pkg, *name)
+	tpl := fmt.Sprintf(tpl1, *pkg, *name, *fname, *name)
 	b, err := ioutil.ReadFile(*fname)
 	if err != nil {
 		panic(err)
